@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicatvo_teste.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!-- Design da página inicial, onde o usuário pode escolher as diferentes funcionalidades do aplicativo, como acessar ver as opções de lazer, reservar uma hospedagem, visualizar as experiencias gastronomicas, acessar feedbacks e uma galeria de fotos -->
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

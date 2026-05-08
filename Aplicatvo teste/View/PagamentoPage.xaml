@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicatvo_teste.View.PagamentoPage"
+             Title="PagamentoPage"
+             BackgroundColor="{StaticResource Creme}">
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <!-- Header -->
+            <VerticalStackLayout
+            BackgroundColor="{StaticResource Dourado}"
+            Padding="24,20,24,24">
+                <Label
+                Text="Formas de Pagamento"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="{StaticResource VerdeEscuro}"/>
+                <Label
+                Text="Aceitamos diversas formas para sua comodidade"
+                FontSize="13"
+                TextColor="{StaticResource VerdeMedio}"
+                Margin="0,6,0,0"/>
+            </VerticalStackLayout>
+
+            <!-- Métodos de pagamento -->
+            <VerticalStackLayout Padding="20" Spacing="12">
+
+                <!-- PIX -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" StrokeShape="RoundRectangle 10" BackgroundColor="#00BFA5" HeightRequest="46" WidthRequest="46">
+                            <Label Text="⚡" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
+                            <Label Text="PIX" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                            <Label Text="Aprovação imediata • Sem taxas" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
+                        </VerticalStackLayout>
+                        <Border Grid.Column="2" StrokeShape="RoundRectangle 6" BackgroundColor="#E8F5E9" Padding="8,4">
+                            <Label Text="Recomendado" FontSize="10" TextColor="#2E7D32" FontAttributes="Bold"/>
+                        </Border>
+                    </Grid>
+                </Border>
+
+                <!-- Cartão de Crédito -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource VerdeMedio}" HeightRequest="46" WidthRequest="46">
+                            <Label Text="💳" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
+                            <Label Text="Cartão de Crédito" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                            <Label Text="Visa, Mastercard, Elo, Amex • Até 12x" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <!-- Cartão de Débito -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource VerdeClaro}" HeightRequest="46" WidthRequest="46">
+                            <Label Text="🏦" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
+                            <Label Text="Cartão de Débito" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                            <Label Text="Principais bandeiras aceitas" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <!-- Carteiras Digitais -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource Terracota}" HeightRequest="46" WidthRequest="46">
+                            <Label Text="📱" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
+                            <Label Text="Carteiras Digitais" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                            <Label Text="Apple Pay, Google Pay, Samsung Pay" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <!-- Transferência Bancária -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="52"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" StrokeShape="RoundRectangle 10" BackgroundColor="{StaticResource CinzaQuente}" HeightRequest="46" WidthRequest="46">
+                            <Label Text="🏧" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Border>
+                        <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
+                            <Label Text="Transferência Bancária" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                            <Label Text="TED/DOC • Pagamento antecipado" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <!-- Nota informativa -->
+                <Border StrokeShape="RoundRectangle 12" BackgroundColor="{StaticResource Gray100}" Stroke="Transparent" Padding="16,14" Margin="0,6,0,0">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="💡 Política de Pagamento" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                        <Label 
+                        Text="Para reservas feitas pelo app, é necessário pagamento antecipado via PIX ou transferência bancária. O hotel entrará em contato com os dados bancários após a confirmação da disponibilidade."
+                        FontSize="12"
+                        TextColor="{StaticResource TextoSecundario}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

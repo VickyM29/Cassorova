@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicatvo_teste.View.AvaliacoesPage"
+             Title="AvaliacoesPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <!-- Header -->
+            <VerticalStackLayout
+            BackgroundColor="{StaticResource Terracota}"
+            Padding="24,20,24,24">
+                <Label
+                Text="Avaliações dos Hóspedes"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="{StaticResource BrancoQuente}"/>
+
+                <!-- Nota geral -->
+                <Grid Margin="0,14,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border 
+                    Grid.Column="0"
+                    StrokeShape="RoundRectangle 12"
+                    BackgroundColor="{StaticResource Dourado}"
+                    Padding="14,10">
+                        <VerticalStackLayout>
+                            <Label Text="9.4" FontSize="30" FontAttributes="Bold" TextColor="{StaticResource VerdeEscuro}" HorizontalTextAlignment="Center"/>
+                            <Label Text="EXCELENTE" FontSize="9" TextColor="{StaticResource VerdeEscuro}" HorizontalTextAlignment="Center" CharacterSpacing="2"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center">
+                        <Label Text="★★★★★" FontSize="20" TextColor="{StaticResource Dourado}"/>
+                        <Label Text="Baseado em centenas de avaliações" FontSize="12" TextColor="{StaticResource CremeEscuro}"/>
+                        <Label Text="Booking • TripAdvisor • Google" FontSize="11" TextColor="{StaticResource CremeEscuro}" Opacity="0.7"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </VerticalStackLayout>
+
+            <!-- Cards de avaliações -->
+            <VerticalStackLayout Padding="20" Spacing="14">
+
+                <!-- Avaliação 1 -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <VerticalStackLayout BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16" Spacing="10">
+                        <HorizontalStackLayout Spacing="4">
+                            <Label Text="★★★★★" FontSize="16" TextColor="{StaticResource Dourado}"/>
+                        </HorizontalStackLayout>
+                        <Label
+                        Text="Lugar maravilhoso e muito confortável! A piscina privativa é incrível e o café da manhã é delicioso. Voltaremos com certeza!"
+                        FontSize="14"
+                        TextColor="{StaticResource TextoPrincipal}"/>
+                        <BoxView HeightRequest="1" Color="{StaticResource CremeEscuro}"/>
+                        <HorizontalStackLayout Spacing="8">
+                            <Border StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource VerdeMedio}" WidthRequest="36" HeightRequest="36">
+                                <Label Text="C" FontSize="16" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </Border>
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label Text="Carlos e Amanda" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                                <Label Text="São Paulo • Janeiro 2025" FontSize="11" TextColor="{StaticResource TextoSecundario}"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Avaliação 2 -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <VerticalStackLayout BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16" Spacing="10">
+                        <HorizontalStackLayout Spacing="4">
+                            <Label Text="★★★★★" FontSize="16" TextColor="{StaticResource Dourado}"/>
+                        </HorizontalStackLayout>
+                        <Label
+                        Text="Melhor experiência em Brotas! O melhor hotel da região, com as duas cachoeiras mais bonitas. Equipe atenciosa e acolhedora."
+                        FontSize="14"
+                        TextColor="{StaticResource TextoPrincipal}"/>
+                        <BoxView HeightRequest="1" Color="{StaticResource CremeEscuro}"/>
+                        <HorizontalStackLayout Spacing="8">
+                            <Border StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource Terracota}" WidthRequest="36" HeightRequest="36">
+                                <Label Text="J" FontSize="16" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </Border>
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label Text="Juliana Costa" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                                <Label Text="Campinas • Fevereiro 2025" FontSize="11" TextColor="{StaticResource TextoSecundario}"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Avaliação 3 -->
+                <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
+                    <VerticalStackLayout BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16" Spacing="10">
+                        <HorizontalStackLayout Spacing="4">
+                            <Label Text="★★★★★" FontSize="16" TextColor="{StaticResource Dourado}"/>
+                        </HorizontalStackLayout>
+                        <Label
+                        Text="Quarto super confortável, silêncio e tranquilidade totais. Piscina aquecida na temperatura perfeita e atendimento impecável do início ao fim!"
+                        FontSize="14"
+                        TextColor="{StaticResource TextoPrincipal}"/>
+                        <BoxView HeightRequest="1" Color="{StaticResource CremeEscuro}"/>
+                        <HorizontalStackLayout Spacing="8">
+                            <Border StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource Dourado}" WidthRequest="36" HeightRequest="36">
+                                <Label Text="R" FontSize="16" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </Border>
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label Text="Ricardo Mendes" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
+                                <Label Text="Ribeirão Preto • Março 2025" FontSize="11" TextColor="{StaticResource TextoSecundario}"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

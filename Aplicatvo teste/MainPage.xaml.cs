@@ -1,24 +1,38 @@
-﻿namespace Aplicatvo_teste
+﻿using Aplicatvo_teste.View;
+
+namespace Aplicatvo_teste
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        private async void IrAcomodacoes(object sender, EventArgs e)
         {
-            count++;
+            await Shell.Current.GoToAsync(nameof(AcomodacoesPage));
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        private async void IrPasseios(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(PasseioPage));
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void IrPagamentos(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(PagamentoPage));
+        }
+
+        private async void IrReservas(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(ReservaPage));
+        }
+
+        private async void IrAvaliacoes(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(AvaliacoesPage));
         }
     }
+
 }

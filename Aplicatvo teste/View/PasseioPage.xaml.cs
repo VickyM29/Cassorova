@@ -12,28 +12,28 @@ public partial class PasseioPage : ContentPage
 
         passeios.Add(new Passeio
         {
-            Nome = "Trilha Cachoeira Cassorova",
-            Descricao = "Caminhada guiada até a cachoeira dupla mais famosa da região. Vista incrível!",
-            Horario = "08:00 e 14:00",
-            Preco = 80,
+            Nome = "Picnic na Natureza",
+            Descricao = "Escolha seu espaço na natureza e montamos seu picnic, com cesta de petiscos e vinho.",
+            Horario = "Reserve na recepção",
+            Preco = 525,
             Icone = "🥾"
         });
 
         passeios.Add(new Passeio
         {
-            Nome = "Tirolesa",
-            Descricao = "Voo de tirolesa sobre o vale com vista para as cachoeiras. Experiência única!",
-            Horario = "09:00 às 17:00",
-            Preco = 150,
+            Nome = "Picnic na Varanda",
+            Descricao = "Um picnic na varanda de seu bangalô, ao lado de seu ofurô, com vista do horizonte.",
+            Horario = "Reserve na recepção",
+            Preco = 525,
             Icone = "🪂"
         });
 
         passeios.Add(new Passeio
         {
-            Nome = "Caiaque",
-            Descricao = "Passeio de caiaque pelo rio com percurso guiado. Equipamentos inclusos.",
-            Horario = "08:30 e 14:30",
-            Preco = 120,
+            Nome = "Day Use",
+            Descricao = "Nosso day use entrega mais valor e satisfação por cada real pago.",
+            Horario = "Reserve agora",
+            Preco = 200,
             Icone = "🛶"
         });
 

@@ -5,39 +5,62 @@
              Title="PasseioPage"
              BackgroundColor="{StaticResource Creme}">
     <ScrollView>
-        <VerticalStackLayout Padding="20">
+        <VerticalStackLayout Spacing="0">
+            <!-- Segundo bloco (conteúdo existente) -->
+            <VerticalStackLayout 
+                BackgroundColor="{StaticResource VerdeEscuro}"
+                Padding="24,20,24,24">
+                  <Label
+                     Text="Nossos Passeios"
+                     FontSize="26"
+                     FontAttributes="Bold"
+                     TextColor="{StaticResource BrancoQuente}"/>
+                  <Label
+                     Text="Aproveite um dia no Cassorova e mergulhe no conforto e na natureza bruta em Brotas, no alto da serra."
+                     FontSize="13"
+                     TextColor="{StaticResource CremeEscuro}"
+                     Margin="0,6,0,0"/>
+            </VerticalStackLayout>
 
             <CollectionView x:Name="ListaPasseio">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="5" />
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame Padding="15"
-                           Margin="0,0,0,12"
-                           CornerRadius="14"
-                           BackgroundColor="{StaticResource BrancoQuente}"
-                           BorderColor="{StaticResource CremeEscuro}">
+                            <VerticalStackLayout Spacing="20">
 
-                            <VerticalStackLayout Spacing="6">
+                            <Frame Padding="20"
+                            Margin="24,20,24,10"
+                            BackgroundColor="{StaticResource BrancoQuente}">
 
-                                <Label Text="{Binding Nome}"
-                                   FontSize="18"
-                                   FontAttributes="Bold"
-                                   TextColor="{StaticResource TextoPrincipal}" />
 
-                                <Label Text="{Binding Descricao}"
-                                   FontSize="13"
-                                   TextColor="{StaticResource TextoSecundario}" />
+                                <!-- Primeiro bloco (conteúdo existente) -->
+                                <VerticalStackLayout Spacing="5">
 
-                                <Label Text="{Binding Horario, StringFormat='Horário: {0}'}"
-                                   FontSize="12" />
+                                    <Label Text="{Binding Nome}"
+                                           FontSize="18"
+                                           FontAttributes="Bold"
+                                           TextColor="{StaticResource TextoPrincipal}" />
 
-                                <Label Text="{Binding Preco, StringFormat='Preço: R$ {0:F2}'}"
-                                   FontSize="14"
-                                   FontAttributes="Bold"
-                                   TextColor="{StaticResource VerdeClaro}" />
+                                    <Label Text="{Binding Descricao}"
+                                           FontSize="13"
+                                           TextColor="{StaticResource TextoSecundario}" />
 
-                            </VerticalStackLayout>
+                                    <Label Text="{Binding Horario, StringFormat='Horário: {0}'}"
+                                           FontSize="12" />
 
-                        </Frame>
+                                    <Label Text="{Binding Preco, StringFormat='Preço: R$ {0:F2}'}"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           TextColor="{StaticResource VerdeClaro}" />
+
+                                </VerticalStackLayout>
+                            </Frame>
+
+                        </VerticalStackLayout>
+
+                     
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

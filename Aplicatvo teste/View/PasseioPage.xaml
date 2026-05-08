@@ -4,12 +4,44 @@
              x:Class="Aplicatvo_teste.View.PasseioPage"
              Title="PasseioPage"
              BackgroundColor="{StaticResource Creme}">
-    <Shell.TitleView>
-        <Label
-        Text="Passeios"
-        FontSize="18"
-        FontAttributes="Bold"
-        TextColor="{StaticResource BrancoQuente}"
-        VerticalOptions="Center"/>
-    </Shell.TitleView>
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+
+            <CollectionView x:Name="ListaPasseio">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="15"
+                           Margin="0,0,0,12"
+                           CornerRadius="14"
+                           BackgroundColor="{StaticResource BrancoQuente}"
+                           BorderColor="{StaticResource CremeEscuro}">
+
+                            <VerticalStackLayout Spacing="6">
+
+                                <Label Text="{Binding Nome}"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="{StaticResource TextoPrincipal}" />
+
+                                <Label Text="{Binding Descricao}"
+                                   FontSize="13"
+                                   TextColor="{StaticResource TextoSecundario}" />
+
+                                <Label Text="{Binding Horario, StringFormat='Horário: {0}'}"
+                                   FontSize="12" />
+
+                                <Label Text="{Binding Preco, StringFormat='Preço: R$ {0:F2}'}"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   TextColor="{StaticResource VerdeClaro}" />
+
+                            </VerticalStackLayout>
+
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

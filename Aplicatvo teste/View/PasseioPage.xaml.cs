@@ -55,6 +55,6 @@ public partial class PasseioPage : ContentPage
             Icone = "🔥"
         });
 
-       
+        ListaPasseio.ItemsSource = passeios;
     }
 }

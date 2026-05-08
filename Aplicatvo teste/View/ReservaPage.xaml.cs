@@ -12,13 +12,13 @@ public partial class ReservaPage : ContentPage
         // Validação simples
         if (string.IsNullOrWhiteSpace(txt_nome.Text))
         {
-            await DisplayAlert("Atenção", "Por favor, preencha seu nome.", "OK");
+            await DisplayAlertAsync("Atenção", "Por favor, preencha seu nome.", "OK");
             return;
         }
 
         if (string.IsNullOrWhiteSpace(txt_hospedes.Text))
         {
-            await DisplayAlert("Atenção", "Informe a quantidade de hóspedes.", "OK");
+            await DisplayAlertAsync("Atenção", "Informe a quantidade de hóspedes.", "OK");
             return;
         }
 
@@ -28,7 +28,7 @@ public partial class ReservaPage : ContentPage
 
         if (checkout <= checkin)
         {
-            await DisplayAlert("Atenção", "A data de check-out deve ser posterior ao check-in.", "OK");
+            await DisplayAlertAsync("Atenção", "A data de check-out deve ser posterior ao check-in.", "OK");
             return;
         }
 
@@ -43,6 +43,6 @@ public partial class ReservaPage : ContentPage
                           $"👥 {txt_hospedes.Text} hóspede(s)\n\n" +
                           $"Nossa equipe entrará em contato para confirmar sua reserva. Obrigado!";
 
-        await DisplayAlert("Solicitação Enviada!", mensagem, "Perfeito!");
+        await DisplayAlertAsync("Solicitação Enviada!", mensagem, "Perfeito!");
     }
 }

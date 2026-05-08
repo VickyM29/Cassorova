@@ -22,19 +22,30 @@
             <VerticalStackLayout 
             BackgroundColor="{StaticResource VerdeEscuro}"
             Padding="24,20,24,24">
-                <Label
-                Text="Nossas Acomodações"
-                FontSize="26"
-                FontAttributes="Bold"
-                TextColor="{StaticResource BrancoQuente}"/>
-                <Label
-                Text="16 suítes exclusivas com piscina privativa e banheira de hidromassagem"
-                FontSize="13"
-                TextColor="{StaticResource CremeEscuro}"
-                Margin="0,6,0,0"/>
-            </VerticalStackLayout>
 
-           
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="IrMainPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+
+                <Label
+                    Text="&lt;"
+                    FontSize="24"
+                    TextColor="{StaticResource Terracota}"
+                    VerticalOptions="Center"/>
+
+                <Label
+                    Text="Nossas Acomodações"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource BrancoQuente}"/>
+                <Label
+                    Text="16 suítes exclusivas com piscina privativa e banheira de hidromassagem"
+                    FontSize="13"
+                    TextColor="{StaticResource CremeEscuro}"
+                    Margin="0,6,0,0"/>
+            </VerticalStackLayout>
+            
+
             <VerticalStackLayout Padding="20" Spacing="16">
 
                 <CollectionView x:Name="ListaQuartos">
@@ -61,18 +72,10 @@
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
                                             </Grid.ColumnDefinitions>
-                                            
-                                            <VerticalStackLayout Grid.Column="0" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
-                                                <Label Text="Acomodações" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
-                                                <Label Text="Suítes e chalés exclusivos" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
-                                            </VerticalStackLayout>
 
-                                            <Label Grid.Column="2" Text="›" FontSize="24" TextColor="{StaticResource Terracota}" VerticalOptions="Center"/>
-
-                                            <Grid.GestureRecognizers>
-                                                <TapGestureRecognizer Tapped="IrMainPage"/>
-                                            </Grid.GestureRecognizers>
+                                           
 
                                             <Label 
                                                 Grid.Column="0"

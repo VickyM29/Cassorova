@@ -45,4 +45,8 @@ public partial class ReservaPage : ContentPage
 
         await DisplayAlertAsync("Solicitação Enviada!", mensagem, "Perfeito!");
     }
+    private async void IrMainPage(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopToRootAsync();
+    }
 }

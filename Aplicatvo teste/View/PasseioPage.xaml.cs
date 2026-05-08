@@ -55,6 +55,13 @@ public partial class PasseioPage : ContentPage
             Icone = "🔥"
         });
 
+
         ListaPasseio.ItemsSource = passeios;
+
+    }
+    private async void IrMainPage(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopToRootAsync();
     }
 }
+

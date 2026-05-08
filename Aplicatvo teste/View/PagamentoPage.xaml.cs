@@ -6,4 +6,8 @@ public partial class PagamentoPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void IrMainPage(object sender, EventArgs e)
+    {
+        await Shell.Current.Navigation.PopToRootAsync();
+    }
 }

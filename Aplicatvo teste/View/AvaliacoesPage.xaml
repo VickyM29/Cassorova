@@ -10,6 +10,16 @@
             <VerticalStackLayout
             BackgroundColor="{StaticResource Terracota}"
             Padding="24,20,24,24">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="IrMainPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+
+                <Label
+                 Text="&lt;"
+                 FontSize="24"
+                 TextColor="{StaticResource VerdeEscuro}"
+                 VerticalOptions="Center"/>
+
                 <Label
                 Text="Avaliações dos Hóspedes"
                 FontSize="26"

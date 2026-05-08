@@ -10,7 +10,17 @@
             <VerticalStackLayout 
                 BackgroundColor="{StaticResource VerdeEscuro}"
                 Padding="24,20,24,24">
-                  <Label
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="IrMainPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+
+                <Label
+                Text="&lt;"
+                FontSize="24"
+                TextColor="{StaticResource Terracota}"
+                VerticalOptions="Center"/>
+
+                <Label
                      Text="Nossos Passeios"
                      FontSize="26"
                      FontAttributes="Bold"

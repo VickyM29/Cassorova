@@ -48,9 +48,10 @@ public partial class AcomodacoesPage : ContentPage
 
         ListaQuartos.ItemsSource = quartos;
     }
+
     private async void IrMainPage(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(MainPage));
+        await Shell.Current.Navigation.PopToRootAsync();
     }
 
 }

@@ -11,6 +11,16 @@
             <VerticalStackLayout
             BackgroundColor="{StaticResource Dourado}"
             Padding="24,20,24,24">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="IrMainPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+
+                <Label
+                 Text="&lt;"
+                 FontSize="24"
+                 TextColor="{StaticResource Terracota}"
+                 VerticalOptions="Center"/>
+
                 <Label
                 Text="Formas de Pagamento"
                 FontSize="26"

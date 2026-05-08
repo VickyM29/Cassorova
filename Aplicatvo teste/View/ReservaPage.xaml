@@ -11,6 +11,16 @@
             <VerticalStackLayout
              BackgroundColor="{StaticResource VerdeMedio}"
              Padding="24,20,24,24">
+                <VerticalStackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="IrMainPage"/>
+                </VerticalStackLayout.GestureRecognizers>
+
+                <Label
+                 Text="&lt;"
+                 FontSize="24"
+                 TextColor="{StaticResource Terracota}"
+                 VerticalOptions="Center"/>
+
                 <Label
                  Text="Planejamento da Estadia"
                  FontSize="26"
@@ -28,7 +38,7 @@
 
               
                 <VerticalStackLayout Spacing="6">
-                    <Label Text="📅  Data de Check-in" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
+                    <Label Text="Data de Check-in" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,4">
                         <DatePicker x:Name="dtp_checkin" Format="dd/MM/yyyy" TextColor="{StaticResource TextoPrincipal}"/>
                     </Border>
@@ -36,7 +46,7 @@
 
                
                 <VerticalStackLayout Spacing="6">
-                    <Label Text="📅  Data de Check-out" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
+                    <Label Text="Data de Check-out" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,4">
                         <DatePicker x:Name="dtp_checkout" Format="dd/MM/yyyy" TextColor="{StaticResource TextoPrincipal}"/>
                     </Border>
@@ -44,7 +54,7 @@
 
               
                 <VerticalStackLayout Spacing="6">
-                    <Label Text="👥  Quantidade de Hóspedes" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
+                    <Label Text="Quantidade de Hóspedes" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,10">
                         <Entry 
                          x:Name="txt_hospedes"
@@ -57,7 +67,7 @@
 
               
                 <VerticalStackLayout Spacing="6">
-                    <Label Text="👤  Seu Nome" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
+                    <Label Text="Seu Nome" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,10">
                         <Entry
                          x:Name="txt_nome"
@@ -69,7 +79,7 @@
 
             
                 <VerticalStackLayout Spacing="6">
-                    <Label Text="📝  Observações (opcional)" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
+                    <Label Text="Observações (opcional)" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,10">
                         <Editor
                          x:Name="txt_obs"
@@ -83,12 +93,12 @@
               
                 <Border StrokeShape="RoundRectangle 10" BackgroundColor="#FFF3E0" Stroke="#FFB74D" StrokeThickness="1" Padding="14,12">
                     <HorizontalStackLayout Spacing="10">
-                        <Label Text="ℹ️" FontSize="16" VerticalOptions="Center"/>
                         <Label
-                         Text="As suítes têm capacidade para 2 pessoas. Check-in a partir das 14h e check-out até as 12h."
+                         Text=" Check-in a partir das 14h e check-out até as 12h."
                          FontSize="12"
                          TextColor="{StaticResource TextoSecundario}"
                          HorizontalOptions="Fill"/>
+                         
                     </HorizontalStackLayout>
                 </Border>
 

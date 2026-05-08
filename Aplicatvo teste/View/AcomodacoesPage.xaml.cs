@@ -8,9 +8,9 @@ public partial class AcomodacoesPage : ContentPage
 
     public AcomodacoesPage()
     {
-        InitializeComponent();  
+        InitializeComponent();
 
-        quartos.Add(new Quarto
+    quartos.Add(new Quarto
         {
             
             Nome = "Villa Aconchego",
@@ -48,7 +48,10 @@ public partial class AcomodacoesPage : ContentPage
 
         ListaQuartos.ItemsSource = quartos;
     }
+    private async void IrMainPage(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(MainPage));
+    }
 
-   
 }
 

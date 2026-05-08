@@ -17,7 +17,8 @@ public partial class AcomodacoesPage : ContentPage
             Descricao = "Sinta o aconchego de se hospedar em nosso bangalô com vista para o vale, ofurô com hidromassagem e lareira." +
                         " Aproveite nossa estrutura de resort com piscinas, trilhas e atividades de aventura. ",
             Preco = 989,
-            Icone = "🌿"
+            Icone = "🌿",
+            Imagem = "quarto1.jpg"
         });
 
         quartos.Add(new Quarto
@@ -28,7 +29,9 @@ public partial class AcomodacoesPage : ContentPage
             Descricao = "Hospede-se em família no nosso bangalô com vista para o vale, ofurô com hidromassagem e lareira. " +
                         "Aproveite nossa estrutura de resort com piscinas, trilhas e atividades de aventura para toda a família.",
             Preco = 1028,
-            Icone = "💧"
+            Icone = "💧",
+            Imagem = "quarto2.jpg"
+
         });
 
         quartos.Add(new Quarto
@@ -38,7 +41,9 @@ public partial class AcomodacoesPage : ContentPage
             Descricao = "Amplo bangalô de 60m², com dois ambientes cuidadosamente projetados para proporcionar uma experiência romântica, confortável e inesquecível a dois." +
                         "Dispõe de cama king size, banheira interna de hidromassagem com hidroterapia e cromoterapia, além de uma charmosa varanda com ofurô privativo, perfeita para momentos de relaxamento.",
             Preco = 1850,
-            Icone = "🏡"
+            Icone = "🏡",
+            Imagem = "quarto3.jpg"
+
         });
 
         ListaQuartos.ItemsSource = quartos;

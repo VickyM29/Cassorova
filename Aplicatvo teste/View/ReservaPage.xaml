@@ -7,7 +7,7 @@
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- Header -->
+          
             <VerticalStackLayout
              BackgroundColor="{StaticResource VerdeMedio}"
              Padding="24,20,24,24">
@@ -23,10 +23,10 @@
                  Margin="0,6,0,0"/>
             </VerticalStackLayout>
 
-            <!-- Formulário -->
+            
             <VerticalStackLayout Padding="20" Spacing="16">
 
-                <!-- Check-in -->
+              
                 <VerticalStackLayout Spacing="6">
                     <Label Text="📅  Data de Check-in" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,4">
@@ -34,7 +34,7 @@
                     </Border>
                 </VerticalStackLayout>
 
-                <!-- Check-out -->
+               
                 <VerticalStackLayout Spacing="6">
                     <Label Text="📅  Data de Check-out" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,4">
@@ -42,7 +42,7 @@
                     </Border>
                 </VerticalStackLayout>
 
-                <!-- Hóspedes -->
+              
                 <VerticalStackLayout Spacing="6">
                     <Label Text="👥  Quantidade de Hóspedes" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,10">
@@ -55,7 +55,7 @@
                     </Border>
                 </VerticalStackLayout>
 
-                <!-- Nome -->
+              
                 <VerticalStackLayout Spacing="6">
                     <Label Text="👤  Seu Nome" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,10">
@@ -67,7 +67,7 @@
                     </Border>
                 </VerticalStackLayout>
 
-                <!-- Observações -->
+            
                 <VerticalStackLayout Spacing="6">
                     <Label Text="📝  Observações (opcional)" FontSize="13" FontAttributes="Bold" TextColor="{StaticResource TextoSecundario}"/>
                     <Border StrokeShape="RoundRectangle 10" Stroke="{StaticResource CremeEscuro}" BackgroundColor="{StaticResource BrancoQuente}" Padding="14,10">
@@ -80,7 +80,7 @@
                     </Border>
                 </VerticalStackLayout>
 
-                <!-- Aviso -->
+              
                 <Border StrokeShape="RoundRectangle 10" BackgroundColor="#FFF3E0" Stroke="#FFB74D" StrokeThickness="1" Padding="14,12">
                     <HorizontalStackLayout Spacing="10">
                         <Label Text="ℹ️" FontSize="16" VerticalOptions="Center"/>
@@ -92,7 +92,7 @@
                     </HorizontalStackLayout>
                 </Border>
 
-                <!-- Botão Confirmar -->
+               
                 <Button
                  Text="Verificar Disponibilidade"
                  BackgroundColor="{StaticResource VerdeMedio}"

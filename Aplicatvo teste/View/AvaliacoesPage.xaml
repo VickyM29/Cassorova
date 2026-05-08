@@ -6,7 +6,7 @@
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- Header -->
+           
             <VerticalStackLayout
             BackgroundColor="{StaticResource Terracota}"
             Padding="24,20,24,24">
@@ -16,7 +16,7 @@
                 FontAttributes="Bold"
                 TextColor="{StaticResource BrancoQuente}"/>
 
-                <!-- Nota geral -->
+                
                 <Grid Margin="0,14,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -42,10 +42,10 @@
                 </Grid>
             </VerticalStackLayout>
 
-            <!-- Cards de avaliações -->
+            
             <VerticalStackLayout Padding="20" Spacing="14">
 
-                <!-- Avaliação 1 -->
+                
                 <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <VerticalStackLayout BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16" Spacing="10">
                         <HorizontalStackLayout Spacing="4">
@@ -68,7 +68,7 @@
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- Avaliação 2 -->
+                
                 <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <VerticalStackLayout BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16" Spacing="10">
                         <HorizontalStackLayout Spacing="4">
@@ -91,7 +91,7 @@
                     </VerticalStackLayout>
                 </Border>
 
-                <!-- Avaliação 3 -->
+                
                 <Border StrokeShape="RoundRectangle 14" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <VerticalStackLayout BackgroundColor="{StaticResource BrancoQuente}" Padding="18,16" Spacing="10">
                         <HorizontalStackLayout Spacing="4">

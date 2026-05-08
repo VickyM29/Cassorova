@@ -9,23 +9,23 @@
     <ScrollView>
         <VerticalStackLayout Spacing="0">
 
-            <!-- HERO SECTION -->
+            
             <Grid HeightRequest="280" BackgroundColor="{StaticResource VerdeEscuro}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <!-- Fundo decorativo com gradiente simulado -->
+
                 <BoxView Color="{StaticResource VerdeEscuro}" />
 
-                <!-- Conteúdo do Hero -->
+                
                 <VerticalStackLayout 
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Spacing="8"
                 Padding="30,0">
 
-                    <!-- Linha decorativa -->
+                    
                     <BoxView 
                     HeightRequest="1"
                     Color="{StaticResource Dourado}"
@@ -48,7 +48,7 @@
                     HorizontalTextAlignment="Center"
                     CharacterSpacing="4"/>
 
-                    <!-- Linha decorativa -->
+                 
                     <BoxView 
                     HeightRequest="1"
                     Color="{StaticResource Dourado}"
@@ -66,7 +66,7 @@
                 </VerticalStackLayout>
             </Grid>
 
-            <!-- TAG LINE -->
+            
             <VerticalStackLayout 
             BackgroundColor="{StaticResource Terracota}"
             Padding="20,14">
@@ -78,7 +78,7 @@
                 CharacterSpacing="1"/>
             </VerticalStackLayout>
 
-            <!-- MENU PRINCIPAL -->
+          
             <VerticalStackLayout Padding="24,28" Spacing="14">
 
                 <Label
@@ -88,7 +88,7 @@
                 TextColor="{StaticResource TextoSecundario}"
                 Margin="0,0,0,6"/>
 
-                <!-- Acomodações -->
+                
                 <Border StrokeShape="RoundRectangle 12" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="20,18">
                         <Grid.ColumnDefinitions>
@@ -97,7 +97,7 @@
                             <ColumnDefinition Width="30"/>
                         </Grid.ColumnDefinitions>
 
-                        <!-- Ícone -->
+                       
                         <Border Grid.Column="0"
                         StrokeShape="RoundRectangle 10"
                         BackgroundColor="{StaticResource VerdeMedio}"
@@ -105,23 +105,23 @@
                             <Label Text="🏡" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
                         </Border>
 
-                        <!-- Texto -->
+                        
                         <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center" Spacing="2">
                             <Label Text="Acomodações" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource TextoPrincipal}"/>
                             <Label Text="Suítes e chalés exclusivos" FontSize="12" TextColor="{StaticResource TextoSecundario}"/>
                         </VerticalStackLayout>
 
-                        <!-- Seta -->
+                        
                         <Label Grid.Column="2" Text="›" FontSize="24" TextColor="{StaticResource Terracota}" VerticalOptions="Center"/>
 
-                        <!-- Toque -->
+                        
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Tapped="IrAcomodacoes"/>
                         </Grid.GestureRecognizers>
                     </Grid>
                 </Border>
 
-                <!-- Passeios -->
+                
                 <Border StrokeShape="RoundRectangle 12" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="20,18">
                         <Grid.ColumnDefinitions>
@@ -146,7 +146,7 @@
                     </Grid>
                 </Border>
 
-                <!-- Reservas -->
+                
                 <Border StrokeShape="RoundRectangle 12" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="20,18">
                         <Grid.ColumnDefinitions>
@@ -171,7 +171,7 @@
                     </Grid>
                 </Border>
 
-                <!-- Pagamentos -->
+                
                 <Border StrokeShape="RoundRectangle 12" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="20,18">
                         <Grid.ColumnDefinitions>
@@ -196,7 +196,7 @@
                     </Grid>
                 </Border>
 
-                <!-- Avaliações -->
+                
                 <Border StrokeShape="RoundRectangle 12" Stroke="{StaticResource CremeEscuro}" StrokeThickness="1">
                     <Grid BackgroundColor="{StaticResource BrancoQuente}" Padding="20,18">
                         <Grid.ColumnDefinitions>
@@ -223,7 +223,6 @@
 
             </VerticalStackLayout>
 
-            <!-- RODAPÉ -->
             <VerticalStackLayout 
             BackgroundColor="{StaticResource VerdeEscuro}" 
             Padding="24,20"

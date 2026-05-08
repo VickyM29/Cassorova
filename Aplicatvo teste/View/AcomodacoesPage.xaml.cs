@@ -12,36 +12,38 @@ public partial class AcomodacoesPage : ContentPage
 
         quartos.Add(new Quarto
         {
-            Nome = "Loft Standard",
-            Descricao = "Aconchegante loft com varanda e vista para o jardim. Lareira, TV e Wi-Fi.",
-            Preco = 939,
+            
+            Nome = "Villa Aconchego",
+            Descricao = "Sinta o aconchego de se hospedar em nosso bangalô com vista para o vale, ofurô com hidromassagem e lareira." +
+                        " Aproveite nossa estrutura de resort com piscinas, trilhas e atividades de aventura. ",
+            Preco = 989,
             Icone = "🌿"
         });
 
         quartos.Add(new Quarto
         {
-            Nome = "Suíte Vista Cachoeira",
-            Descricao = "Suíte ampla com vista privilegiada para a Cachoeira Cassorova. Ofurô externo.",
-            Preco = 1200,
+            
+
+            Nome = "Villa Aconchego Família",
+            Descricao = "Hospede-se em família no nosso bangalô com vista para o vale, ofurô com hidromassagem e lareira. " +
+                        "Aproveite nossa estrutura de resort com piscinas, trilhas e atividades de aventura para toda a família.",
+            Preco = 1028,
             Icone = "💧"
         });
 
         quartos.Add(new Quarto
         {
-            Nome = "Chalé Premium",
-            Descricao = "Chalé independente com piscina privativa aquecida e deck exclusivo.",
-            Preco = 1580,
+            
+            Nome = "Villa Romance",
+            Descricao = "Amplo bangalô de 60m², com dois ambientes cuidadosamente projetados para proporcionar uma experiência romântica, confortável e inesquecível a dois." +
+                        "Dispõe de cama king size, banheira interna de hidromassagem com hidroterapia e cromoterapia, além de uma charmosa varanda com ofurô privativo, perfeita para momentos de relaxamento.",
+            Preco = 1850,
             Icone = "🏡"
-        });
-
-        quartos.Add(new Quarto
-        {
-            Nome = "Suíte Master Luxo",
-            Descricao = "Nossa acomodação mais exclusiva. Piscina infinita privativa com vista para as cachoeiras.",
-            Preco = 2100,
-            Icone = "✨"
         });
 
         ListaQuartos.ItemsSource = quartos;
     }
+
+   
 }
+

@@ -35,14 +35,14 @@
 
                     <Label
                     Text="CASSOROVA"
-                    FontSize="38"
+                    FontSize="36"
                     FontAttributes="Bold"
                     TextColor="{StaticResource BrancoQuente}"
                     HorizontalTextAlignment="Center"
                     CharacterSpacing="6"/>
 
                     <Label
-                    Text="HOTEL BOUTIQUE"
+                    Text="ECOTURISMO E RESORT"
                     FontSize="13"
                     TextColor="{StaticResource Dourado}"
                     HorizontalTextAlignment="Center"
@@ -228,14 +228,17 @@
             BackgroundColor="{StaticResource VerdeEscuro}" 
             Padding="24,20"
             Spacing="4">
-                <Label 
-                Text="Cassorova Hotel Boutique"
+                
+            <Image Source="logo.png"  HorizontalOptions="Center" HeightRequest="40" />
+                
+            <Label 
+                Text="Cassorova Ecoturismo e Resort"
                 FontSize="13"
                 FontAttributes="Bold"
                 TextColor="{StaticResource Dourado}"
                 HorizontalTextAlignment="Center"/>
-                <Label 
-                Text="Brotas, São Paulo • (14) 99999-0000"
+            <Label 
+                Text="Brotas, São Paulo • (14) 99106-8097"
                 FontSize="11"
                 TextColor="{StaticResource CremeEscuro}"
                 HorizontalTextAlignment="Center"/>

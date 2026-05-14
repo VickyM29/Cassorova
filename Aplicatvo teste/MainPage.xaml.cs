@@ -35,7 +35,6 @@ namespace Aplicatvo_teste
                 var nextIndex = (MeuCarrossel.Position + 1) % items.Count;
                 var nextItem = items[nextIndex];
 
-                // Atualiza o item atual de forma segura na UI
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     MeuCarrossel.CurrentItem = nextItem;
@@ -53,27 +52,27 @@ namespace Aplicatvo_teste
 
         private async void IrAcomodacoes(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(AcomodacoesPage));
+            await Navigation.PushAsync(new AcomodacoesPage());
         }
 
         private async void IrPasseios(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(PasseioPage));
+            await Navigation.PushAsync(new PasseioPage());
         }
 
         private async void IrPagamentos(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(PagamentoPage));
+            await Navigation.PushAsync(new PagamentoPage());
         }
 
         private async void IrReservas(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(ReservaPage));
+            await Navigation.PushAsync(new ReservaPage());
         }
 
         private async void IrAvaliacoes(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync(nameof(AvaliacoesPage));
+            await Navigation.PushAsync(new AvaliacoesPage());
         }
     }
 

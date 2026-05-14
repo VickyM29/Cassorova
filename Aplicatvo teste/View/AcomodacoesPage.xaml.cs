@@ -51,7 +51,7 @@ public partial class AcomodacoesPage : ContentPage
 
     private async void IrMainPage(object sender, EventArgs e)
     {
-        await Shell.Current.Navigation.PopToRootAsync();
+        await Shell.Current.Navigation.PopAsync();
     }
 
 }

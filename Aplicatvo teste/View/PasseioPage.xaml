@@ -6,7 +6,6 @@
              BackgroundColor="{StaticResource Creme}">
     <ScrollView>
         <VerticalStackLayout Spacing="0">
-            <!-- Segundo bloco (conteúdo existente) -->
             <VerticalStackLayout 
                 BackgroundColor="{StaticResource VerdeEscuro}"
                 Padding="24,20,24,24">
@@ -45,7 +44,6 @@
                             BackgroundColor="{StaticResource BrancoQuente}">
 
 
-                                <!-- Primeiro bloco (conteúdo existente) -->
                                 <VerticalStackLayout Spacing="5">
 
                                     <Label Text="{Binding Nome}"

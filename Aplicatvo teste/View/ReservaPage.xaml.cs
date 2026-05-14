@@ -9,7 +9,6 @@ public partial class ReservaPage : ContentPage
 
     private async void VerificarDisponibilidade(object sender, EventArgs e)
     {
-        // Validação simples
         if (string.IsNullOrWhiteSpace(txt_nome.Text))
         {
             await DisplayAlertAsync("Atenção", "Por favor, preencha seu nome.", "OK");
@@ -22,7 +21,6 @@ public partial class ReservaPage : ContentPage
             return;
         }
 
-        // Garantir valores não nulos para as datas
         DateTime checkin = dtp_checkin.Date ?? DateTime.Today;
         DateTime checkout = dtp_checkout.Date ?? DateTime.Today;
 
@@ -32,7 +30,6 @@ public partial class ReservaPage : ContentPage
             return;
         }
 
-        // Calcular número de diárias
         int diarias = (checkout - checkin).Days;
 
         string mensagem = $"Olá, {txt_nome.Text}!\n\n" +
@@ -47,6 +44,6 @@ public partial class ReservaPage : ContentPage
     }
     private async void IrMainPage(object sender, EventArgs e)
     {
-        await Shell.Current.Navigation.PopToRootAsync();
+        await Shell.Current.Navigation.PopAsync();
     }
 }

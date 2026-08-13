@@ -1,10 +1,24 @@
+using Aplicatvo_teste.Services;
+using Microsoft.Extensions.Hosting;
 namespace Aplicatvo_teste.View;
 
 public partial class ReservaPage : ContentPage
 {
+    private readonly ClimaService _climaService;
     public ReservaPage()
     {
-        InitializeComponent();
+        InitializeComponent(); 
+
+        _climaService = new ClimaService();
+    }
+
+    private async void OnConsultarClimaClicked (object? sender, EventArgs e)
+    {
+        lblClima.Text = "Consultando API...";
+
+        string clima = await _climaService.ObterClimaAsync();
+
+        lblClima.Text = clima;
     }
 
     private async void VerificarDisponibilidade(object sender, EventArgs e)
